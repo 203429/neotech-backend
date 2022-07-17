@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     # Componentes
     'valores',
     'login',
+    'riego',
 ]
 
 REST_FRAMEWORK = {

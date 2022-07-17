@@ -16,7 +16,5 @@ class loginAuth(ObtainAuthToken):
         token,create = Token.objects.get_or_create(user=user)
         
         return Response({
-            'token' : token.key,
-            'user_id' : user.pk,
-            'is_superuser' : user.is_superuser
+            'token' : token.key
         })

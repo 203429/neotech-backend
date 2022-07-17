@@ -33,6 +33,7 @@ router = routers.DefaultRouter()
 router.register(r'users', UserViewSet)
 
 urlpatterns = [
-    re_path(r'^neotech/', include('valores.urls')),
     re_path(r'^neotech/', include('login.urls')),
+    re_path(r'^neotech/', include('valores.urls')),
+    re_path(r'^neotech/', include('riego.urls')),
 ]
